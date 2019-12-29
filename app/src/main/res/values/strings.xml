@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CarClick</string>
+    <string name="bC">Blue Car Wins!</string>
+    <string name="rC">Red Car Wins!</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:background="@drawable/road"
+                android:adjustViewBounds="true">
+    <FrameLayout
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:background="@drawable/finish"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="20dp">
+            </FrameLayout>
+    <FrameLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/lL"
+                  android:adjustViewBounds="true">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:layout_gravity="center_horizontal"
+                  android:text="@string/bC"
+                  android:visibility="gone"
+                  android:textSize="17pt"
+                  android:outline
+                  android:textColor="@color/colorRed"
+                  android:id="@+id/winner"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:text="@string/rC"
+                  android:visibility="gone"
+                  android:textSize="17pt"
+                  android:outlineProvider="background"
+                  android:textColor="@color/colorRed"
+                  android:id="@+id/winner1"/>
+
+        <Button android:layout_width="64dp" android:layout_height="64dp"
+                android:id="@+id/fCB"
+                style="@style/Widget.AppCompat.ButtonBar"
+                android:layout_gravity="top|start"
+                android:onClick="fCar"
+                android:background="@drawable/bt"/>
+
+        <Button android:layout_width="64dp" android:layout_height="64dp"
+                android:id="@+id/sCB"
+                style="@style/Widget.AppCompat.ButtonBar"
+                android:layout_gravity="top|end"
+                android:onClick="sCar"
+                android:background="@drawable/bt"/>
+    </FrameLayout>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                 android:adjustViewBounds="true"
+                 android:id="@+id/bek">
+
+        <Button android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/res"
+                android:visibility="gone"
+                android:id="@+id/res"
+                android:onClick="restars"
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+        <ImageView android:layout_width="50dp"
+                   android:layout_height="130dp"
+                   android:background="@drawable/car1"
+                   android:layout_gravity="start|bottom"
+                   android:adjustViewBounds="true"
+                   android:id="@+id/car1"/>
+
+        <ImageView android:layout_width="50dp"
+                   android:layout_height="130dp"
+                   android:background="@drawable/car2"
+                   android:layout_gravity="end|bottom"
+                   android:adjustViewBounds="true"
+                   android:id="@+id/car2" tools:ignore="ContentDescription"/>
+    </FrameLayout>
+
+</RelativeLayout>
