@@ -5,4 +5,8 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorRoad">#4C4C52</color>
     <color name="colorRed">#FF0000</color>
+    <color name="colorBack">#7A1C97</color>
+    <color name="colorBlue">#2A46DB</color>
+    <color name="invisible">#002A46DB</color>
+    <color name="colorBlack">#000000</color>
 </resources>
